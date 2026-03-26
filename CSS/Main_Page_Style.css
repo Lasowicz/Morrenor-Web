@@ -2,6 +2,16 @@
     font-family: 'SimpleGothic';
     src: url('../fonts/SimpleGothic.woff') format('woff');
 }
+@font-face {
+    font-family: 'cinzel_regular';
+    src: url('../fonts/cinzel_regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'cinzel_bold';
+    src: url('../fonts/cinzel_bold.woff') format('woff');
+}
+
 
 body {
     background-color: black;
@@ -12,52 +22,27 @@ body {
 }
 
 .morrenor_title {
-    font-family: SimpleGothic, arial, sans-serif, serif;
+    font-family: cinzel_bold, arial, sans-serif, serif;
     font-size: 4.5rem;
     margin-bottom: 30px;
     width: 500px;
-   display: inline-block;
+    display: inline-block;
     text-align: center;
     height: auto;
     color: #ff3366;
-    background: rgba(10, 10, 15, 0.85);
-    border: 2px solid #ff3366;
-    border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.4s ease;
     text-shadow: 0 0 10px #ff3366;
-    box-shadow:
-            0 0 20px #ff3366,
-            0 0 40px rgba(255, 51, 102, 0.5);
 }
 
 .morrenor_title:hover {
-    color: #fff;
-    background: rgba(20, 0, 30, 0.95);
-    box-shadow:
-            0 0 30px #ff3366,
-            0 0 60px #ff0066,
-            0 0 90px rgba(255, 0, 102, 0.7);
-    transform: scale(1.08);
-    text-shadow: 0 0 20px #ff99cc;
-}
-
-.morrenor_title::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.6s;
-    pointer-events: none;
+    transform: scale(1.1);
+    transition: all 0.4s ease;
 }
 
 .more_morrenor_title {
-    font-family: SimpleGothic, arial, sans-serif, serif;
+    font-family: cinzel_regular, arial, sans-serif, serif;
     max-width: 700px;
     margin: 0 auto 40px;
     font-size: 2.0rem;
@@ -66,19 +51,89 @@ body {
 }
 
 .morrenor_preview_text_container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    padding: 55px 45px;
+    margin: 70px 0;
+    border: 1px solid #0014ff;
+    border-radius: 8px;
+    box-shadow:
+            0 0 30px rgba(0, 224, 255, 0.35),
+            0 0 60px rgba(90, 40, 160, 0.25);
+    position: relative;
 }
 
-.preview_img_container img {
-    width: 500px;
-    height: 700px;
+.morrenor_preview_text_container p {
+    font-family: Georgia, arial, sans-serif, serif;
+    font-size: 1.18rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.morrenor_preview_text_container .read-more-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: rgba(140, 25, 70, 0.85);
+    color: #d8cada;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #c05080;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.morrenor_preview_text_container .read-more-btn:hover {
+    background: rgba(170, 35, 85, 0.95);
+    box-shadow: 0 0 20px rgba(200, 60, 110, 0.6);
+    transform: translateY(-2px);
+}
+
+#world_crack {
+    padding-bottom: 80px;
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1.5rem;
+    animation: flicker 4s infinite;
+}
+@keyframes flicker {
+    0% {
+        color: #ff3366;
+        text-shadow:
+                0 0 10px #ff3366,
+                0 0 20px #ff3366,
+                0 0 30px #ff3366;
+    }
+    25% {
+        color: #00ffff;
+        text-shadow:
+                0 0 10px #00ffff,
+                0 0 20px #00ffff,
+                0 0 30px #00ffff;
+    }
+    50% {
+        color: #005aff;
+        text-shadow:
+                0 0 10px #005aff,
+                0 0 20px #005aff,
+                0 0 30px #005aff;
+    }
+    75% {
+        color: #c500ff;
+        text-shadow:
+                0 0 10px #c500ff,
+                0 0 20px #c500ff,
+                0 0 30px #c500ff;
+    }
+    100% {
+        color: #ff3366;
+        text-shadow:
+                0 0 10px #ff3366,
+                0 0 20px #ff3366,
+                0 0 30px #ff3366;
+    }
 }
 
 .enjoy_morrenor {
-    font-family: SimpleGothic, Arial, Tahoma, sans-serif;
+    font-family: cinzel_bold, arial, sans-serif, serif;
     position: relative;
     padding: 20px 60px;
     font-size: 28px;
