@@ -50,6 +50,39 @@ body {
     text-align: center;
 }
 
+
+
+.title_background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/title_page/Mjernarr.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.hero_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.hero_section img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgb(255, 51, 102);
+}
+
+.hero_section img:hover {
+    transform: scale(101%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
+}
+
 .morrenor_preview_text_container {
     background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
     padding: 55px 45px;
