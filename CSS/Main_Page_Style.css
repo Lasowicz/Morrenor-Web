@@ -214,10 +214,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    background: linear-gradient(135deg, #000000, #1a0f2e, #0f1b3d);
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
     padding: 55px 45px;
     margin: 70px 0;
-    border: 1px solid #0014ff;
+    border: 1px solid #0800ff;
     border-radius: 8px;
     box-shadow:
             0 0 30px rgba(0, 224, 255, 0.35),
@@ -233,5 +233,5 @@ body {
 .where-to-start-content img:hover {
     transform: scale(101%);
     transition: all 0.4s ease;
-    box-shadow: 0 10px 20px 10px rgba(0, 255, 206, 0.6);
+    box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
 }
