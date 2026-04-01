@@ -91,6 +91,18 @@ body {
     padding-bottom: 20px;
 }
 
+.main-heroes {
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(7, 0, 255);
+    padding: 20px;
+    border: 1px solid #0048ff;;
+}
+
 .hero_section {
     font-family: cinzel_regular, arial, sans-serif, serif;
     font-size: 1.5rem;
@@ -138,6 +150,30 @@ body {
     height: 60px;
 }
 
+#esphyre-name:hover {
+    transform: scale(102%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgb(255, 0, 0);
+}
+
+#morrian-name:hover {
+    transform: scale(102%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgb(106, 0, 143);
+}
+
+#zen-ja-name:hover {
+    transform: scale(102%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgb(0, 255, 2);
+}
+
+#zen-ja-name:hover {
+transform: scale(105%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgb(0, 255, 2);
+}
+
 .morrenor_preview_text_container {
     background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
     padding: 55px 45px;
@@ -182,6 +218,61 @@ body {
     font-size: 1.5rem;
 }
 
+.where-to-start {
+    padding-top: 80px;
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 2rem;
+}
+
+.where-to-start-text {
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(7, 0, 255);
+    padding: 20px;
+    border: 1px solid #0048ff;;
+}
+
+.where-to-start-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.where-to-start-content img {
+    width: auto;
+    height: 500px;
+    box-shadow: 0 0 30px rgb(255, 0, 102);
+    border-radius: 10px;
+}
+
+.where-to-start-content img:hover {
+    transform: scale(101%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
+}
+
+#book,
+#characters,
+#map,
+#world-chronicles {
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1rem;
+    padding: 10px;
+    background: rgba(140, 25, 70, 0.85);
+    color: #d8cada;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #c05080;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    height: 60px;
+}
+
+
 .enjoy_morrenor {
     font-family: cinzel_bold, arial, sans-serif, serif;
     position: relative;
@@ -224,60 +315,4 @@ body {
     opacity: 0;
     transition: opacity 0.6s;
     pointer-events: none;
-}
-
-
-@keyframes pulse-glow {
-    0%, 100% { transform: scale(0.8); }
-    50% { transform: scale(1.2); }
-}
-
-.where-to-start {
-    margin-top: 40px;
-    font-family: cinzel_regular, arial, sans-serif, serif;
-    font-size: 2rem;
-}
-
-.where-to-start-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
-    padding: 40px 20px;
-    margin: 30px 0;
-    border: 1px solid #0800ff;
-    border-radius: 8px;
-    box-shadow:
-            0 0 30px rgba(0, 224, 255, 0.35),
-            0 0 60px rgba(90, 40, 160, 0.25);
-    position: relative;
-}
-
-.where-to-start-content p {
-    animation: pulseGlow 2s ease-in-out infinite;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes pulseGlow {
-    0% {
-        text-shadow: 0 0 6px #0500ff, 0 0 12px #0500ff;
-    }
-    50% {
-        text-shadow: 0 0 12px #ff3366, 0 0 24px #ff3366;
-    }
-    100% {
-        text-shadow: 0 0 6px #0500ff, 0 0 12px #0500ff;
-    }
-}
-
-.where-to-start-content img {
-    width: auto;
-    height: 500px;
-}
-
-.where-to-start-content img:hover {
-    transform: scale(101%);
-    transition: all 0.4s ease;
-    box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
 }
