@@ -1,4 +1,6 @@
-@font-face {
+
+                                                  /*FONTS ON MAIN_PAGE*/
+ {
     font-family: 'SimpleGothic';
     src: url('../fonts/SimpleGothic.woff') format('woff');
 }
@@ -20,6 +22,8 @@ body {
     padding: 20px 20px;
     background: url("../images/title_page/background.png") center center / cover no-repeat fixed;
 }
+
+                                                  /*NAVIGATION-MENU*/
 
 .navigation-menu {
     display: flex;
@@ -67,7 +71,56 @@ body {
     border: 1px solid #ffffff;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 10;
+    border: 1px solid #0048ff;;
+    padding-top: 8px;
+}
 
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content #Dulgarzva_fog:hover {
+    transition: all 0.5s ease;
+    background: linear-gradient(135deg,
+    #2a1b4d,
+    #1e3a5f,
+    #2a4a6b);
+    box-shadow: inset 0 0 12px rgba(160, 200, 255, 0.3);
+}
+
+ .dropdown-content #Hatari_Sacrifice:hover {
+     background: linear-gradient(135deg,
+     #ff525f,
+     #f30065,
+     #ff0000);
+     box-shadow: inset 0 0 12px rgb(0 0 0);
+}
+ .dropdown-content #Ice_of_Runkheim:hover {
+     transition: all 0.5s ease;
+     background: linear-gradient(135deg,
+     #ffffff,
+     #00a7ff,
+     #002fa6);
+     box-shadow: inset 0 0 12px rgb(0 0 0);
+ }
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .morrenor_title {
     font-family: cinzel_bold, arial, sans-serif, serif;
@@ -268,6 +321,13 @@ transform: scale(102%);
     transform: scale(101%);
     transition: all 0.4s ease;
     box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
+}
+
+.where-to-start-description {
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
 }
 
 #book,
