@@ -63,9 +63,11 @@ body {
     border-radius: 12px;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 0 40px rgb(255, 51, 102);
-    border: 1px solid #c05080;
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    border: 1px solid #ffffff;
 }
+
+
 
 .morrenor_title {
     font-family: cinzel_bold, arial, sans-serif, serif;
@@ -111,7 +113,7 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
     border-radius: 10px;
-    box-shadow: 0 0 40px rgb(7, 0, 255);
+    box-shadow: 0 0 40px rgb(255, 255, 255);
     padding: 20px;
     border: 1px solid #0048ff;;
 }
