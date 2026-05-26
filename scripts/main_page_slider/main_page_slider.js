@@ -15,6 +15,10 @@ if (!slider) {
     return;
 }
 
+if (main_page_slider.length === 0) {
+    console.error('❌ В slider нет картинок!')
+}
+
 let currentIndex = 0;
 
 function changeBackground() {

@@ -11,12 +11,55 @@
 
 <div class = "header_image"></div>
 <h3>Зунгари</h3>
+<img
+        src="/images/characters/ZunGari/ZenJa_Static.png"
+        alt="ZenJa Static"
+        style="width: 100%; height: auto; display: block;"
+>
 <h3>Рунхеймцы</h3>
+
 <h3>Брэнари</h3>
-<img src="/images/characters/Brenari/Morrian_Static.png">
+
+<div class="hover-video-container" style="position: relative; display: inline-block; width: 400px; height: auto;">
+    <!-- Статичная картинка -->
+    <img
+            src="/images/characters/Brenari/Morrian_Static.png"
+            alt="Morrian Static"
+            style="width: 100%; height: auto; display: block;"
+    >
+
+    <!-- Видео (скрыто по умолчанию) -->
+    <video
+            loop
+            muted
+            playsinline
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.2s ease;"
+    >
+        <source src="/video/Morrian_Video.mp4" type="video/mp4">
+        <!-- Добавьте другие форматы при необходимости -->
+    </video>
+</div>
+
 <img src="/images/characters/Brenari/Esphyre_Static.png">
 <h3>Хатариды</h3>
 <script>
+    document.querySelectorAll('.hover-video-container').forEach(container => {
+        const img = container.querySelector('img');
+        const video = container.querySelector('video');
+
+        container.addEventListener('mouseenter', () => {
+            video.currentTime = 0;        // начинаем видео с начала
+            video.play();
+            video.style.opacity = '1';
+            img.style.opacity = '0';      // можно скрыть картинку
+        });
+
+        container.addEventListener('mouseleave', () => {
+            video.pause();
+            video.style.opacity = '0';
+            img.style.opacity = '1';
+        });
+    });
 
 </script>
 </body>
