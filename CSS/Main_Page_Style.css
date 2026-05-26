@@ -1,3 +1,5 @@
+
+                                                  /*FONTS ON MAIN_PAGE*/
 @font-face {
     font-family: 'SimpleGothic';
     src: url('../fonts/SimpleGothic.woff') format('woff');
@@ -20,6 +22,8 @@ body {
     padding: 20px 20px;
     background: url("../images/title_page/background.png") center center / cover no-repeat fixed;
 }
+
+                                                  /*NAVIGATION-MENU*/
 
 .navigation-menu {
     display: flex;
@@ -49,22 +53,98 @@ body {
     transition: all 0.3s ease;
 }
 
+.navigation-menu-button {
+    box-shadow: 0 0 20px rgba(255 50 157 / 0.99);
+}
+
 .navigation-menu-button:hover {
     background: rgba(170, 35, 85, 0.95);
-    box-shadow: 0 0 20px rgba(0, 255, 206, 0.6);
+    box-shadow: 0 0 40px rgb(196 196 196);
     transform: translateY(-2px);
 }
 
 .title-background {
     margin-top: 60px;
-    background-image: url("../images/title_page/druel-dar.webp");
-    background-size: cover;
     padding: 24px;
     border-radius: 12px;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 0 40px rgb(255, 51, 102);
-    border: 1px solid #c05080;
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 400px;
+    transition: background-image 1.2s ease-in;
+}
+
+.title-background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+
+.title-background > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);     /* небольшой сдвиг вверх */
+    transition: all 0.5s ease;        /* основная скорость */
+    transition-delay: 0.15s;          /* ← вот твоя задержка */
+    position: absolute;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 10;
+    border: 1px solid #0048ff;;
+    padding-top: 8px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content #Dulgarzva_fog:hover {
+    background: linear-gradient(135deg,
+    #2a1b4d,
+    #1e3a5f,
+    #2a4a6b);
+    box-shadow: inset 0 0 12px rgba(160, 200, 255, 0.3);
+}
+
+ .dropdown-content #Hatari_Sacrifice:hover {
+     background: linear-gradient(135deg,
+     #ff525f,
+     #f30065,
+     #ff0000);
+     box-shadow: inset 0 0 12px rgb(0 0 0);
+}
+ .dropdown-content #Ice_of_Runkheim:hover {
+     background: linear-gradient(135deg,
+     #ffffff,
+     #00a7ff,
+     #002fa6);
+     box-shadow: inset 0 0 12px rgb(0 0 0);
+ }
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .morrenor_title {
@@ -100,7 +180,10 @@ body {
 .world-crack {
     font-family: cinzel_regular, arial, sans-serif, serif;
     font-size: 1.2rem;
-    padding-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 40px rgb(255, 255, 255);
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    text-shadow: 0 0 20px rgba(140, 25, 70, 0.85);
 }
 
 
@@ -111,7 +194,7 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
     border-radius: 10px;
-    box-shadow: 0 0 40px rgb(7, 0, 255);
+    box-shadow: 0 0 40px rgb(255, 255, 255);
     padding: 20px;
     border: 1px solid #0048ff;;
 }
@@ -268,6 +351,13 @@ transform: scale(102%);
     box-shadow: 0 0 40px rgba(0, 255, 206, 0.6);
 }
 
+.where-to-start-description {
+    font-family: cinzel_regular, arial, sans-serif, serif;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+}
+
 #book,
 #characters,
 #map,
@@ -338,3 +428,4 @@ transform: scale(102%);
     transition: opacity 0.6s;
     pointer-events: none;
 }
+

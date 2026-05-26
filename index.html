@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <title>Морренор: Трещины мира</title>
     <link rel="stylesheet" href="CSS/Main_Page_Style.css">
+    <link rel="icon" href="images/title_page/favicon.png" type="image/png">
 </head>
 <body>
 
+                                                <!--БЛОК КНОПОК НАВИГАЦИИ СВЕРХУ-->
+
 <div class="navigation-menu">
-        <button class="navigation-menu-button">Роман</button>
-        <button class="navigation-menu-button">Мир</button>
-        <button class="navigation-menu-button">Персонажи</button>
-        <button class="navigation-menu-button">Карта</button>
-        <button class="navigation-menu-button">Бестиарий</button>
-        <button class="navigation-menu-button">Поддержать</button>
+        <a class="navigation-menu-button">Роман</a>
+        <div class="dropdown">
+        <a class="navigation-menu-button">
+            Рассказы
+        </a>
+        <div class="dropdown-content">
+            <a href="#" id="Dulgarzva_fog">Туманы Дул'Гар'Зва</a>
+            <a href="#" id="Hatari_Sacrifice">Жертвы Хатари</a>
+            <a href="#" id="Ice_of_Runkheim">Льды Рунхейма</a>
+        </div>
+        </div>
+        <a class="navigation-menu-button" href="/Morrenor-Web/HTML/world/world.html">Мир</a>
+        <a class="navigation-menu-button" href="/Morrenor-Web/HTML/characters/characters.html">Персонажи</a>
+        <a class="navigation-menu-button" href="/Morrenor-Web/HTML/Map/map.html">Карта</a>
+        <a class="navigation-menu-button" href="/Morrenor-Web/HTML/bestiary/bestiary.html">Бестиарий</a>
+        <a class="navigation-menu-button">Арты</a>
+        <a class="navigation-menu-button">Поддержать</a>
 </div>
 
-<div class=title-background>
+
+                                     <!--БЛОК МОРРЕНОР С ТИТУЛЬНЫМ НАЗВАНИЕМ И КРАТКОЙ ПОДПИСЬЮ-->
+
+<div class=title-background id="mainSlider">
 <p class="morrenor_title">МОРРЕНОР</p>
 <p class="more_morrenor_title">Трещины мира</p>
 
@@ -29,8 +46,15 @@
 </div>
 </div>
 
+                                                         <!--БЛОК С ЧЕГО НАЧАТЬ?-->
+
 <div class="where-to-start">
     <p class="where-to-start-text">С чего начать?</p>
+    <p class="where-to-start-description">Морренор — это не один путь, а целый мир дорог, легенд и судеб. Здесь суровый роман о великих испытаниях
+        соседствует с мрачными преданиями, древними мифами и историями о народах, чья правда не всегда делится на свет и тьму.
+        Ледяные земли Рунхейма, кровавые ритуалы Хатари, туманные острова древних зун’гари, чудовища, пророчества,
+        воины, шаманы и те, чьи решения меняют судьбу целых народов.
+        Добро пожаловать в Морренор — мир, в котором за каждым горизонтом ждёт новая легенда.</p>
     <div class="where-to-start-content">
         <a><img src="images/where-to-start/book.png" alt="book"></a>
         <a><img src="images/where-to-start/characters.png" alt="characters"></a>
@@ -67,6 +91,7 @@
     </div>
 </div>
 
-<script></script>
+<script src="/scripts/for_audio/main_page_click.js"></script>
+<script src="/scripts/main_page_slider/main_page_slider.js"></script>
 </body>
 </html>
