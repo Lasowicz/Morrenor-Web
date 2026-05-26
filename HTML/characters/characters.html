@@ -9,57 +9,29 @@
 <body>
 
 
-<div class = "header_image"></div>
-<h3>Зунгари</h3>
-<img
-        src="/images/characters/ZunGari/ZenJa_Static.png"
-        alt="ZenJa Static"
-        style="width: 100%; height: auto; display: block;"
->
-<h3>Рунхеймцы</h3>
-
-<h3>Брэнари</h3>
-
-<div class="hover-video-container" style="position: relative; display: inline-block; width: 400px; height: auto;">
-    <!-- Статичная картинка -->
-    <img
-            src="/images/characters/Brenari/Morrian_Static.png"
-            alt="Morrian Static"
-            style="width: 100%; height: auto; display: block;"
-    >
-
-    <!-- Видео (скрыто по умолчанию) -->
-    <video
-            loop
-            muted
-            playsinline
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.2s ease;"
-    >
-        <source src="/video/Morrian_Video.mp4" type="video/mp4">
-        <!-- Добавьте другие форматы при необходимости -->
-    </video>
+<div class = "header_image">
+    <p class ="header_text">
+        МОРРЕНОР ПЕРСОНАЖИ
+    </p>
 </div>
-
-<img src="/images/characters/Brenari/Esphyre_Static.png">
+<div class = "races_preview_text_container">
+    <p class ="races_text"> Расы Морренора весьма разнообразны и необычны. Многие из них давно исчезли, а часть живет.
+    Здесь нет привычных эльфов, троллей, гномов</p>
+</div>
+<h3>Зунгари</h3>
+<h3>Рунхеймцы</h3>
+<h3>Брэнари</h3>
+<div class="brenari_text_preview_container">
+    <p class="brenari_text">
+        Небольшой текст про Брэнари
+    </p>
+</div>
+<div class="brenari_container">
+    <img src="/images/characters/Brenari/Morrian_Static.png">
+    <img src="/images/characters/Brenari/Esphyre_Static.png">
+</div>
 <h3>Хатариды</h3>
 <script>
-    document.querySelectorAll('.hover-video-container').forEach(container => {
-        const img = container.querySelector('img');
-        const video = container.querySelector('video');
-
-        container.addEventListener('mouseenter', () => {
-            video.currentTime = 0;        // начинаем видео с начала
-            video.play();
-            video.style.opacity = '1';
-            img.style.opacity = '0';      // можно скрыть картинку
-        });
-
-        container.addEventListener('mouseleave', () => {
-            video.pause();
-            video.style.opacity = '0';
-            img.style.opacity = '1';
-        });
-    });
 
 </script>
 </body>
