@@ -82,6 +82,7 @@ body {
     transition: background-image 1.2s ease-in;
 }
 
+
 .title-background::after {
     content: '';
     position: absolute;

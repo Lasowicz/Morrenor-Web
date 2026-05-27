@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'images/title_page/slider/img3.png',
         'images/title_page/slider/img4.png',
         'images/title_page/slider/img5.png',
-        'images/title_page/slider/img6.png'
+        'images/title_page/slider/img6.png',
+        'images/title_page/slider/img7.png',
+        'images/title_page/slider/img8.png',
+        'images/title_page/slider/img9.png'
     ];
 
 const slider = document.getElementById('mainSlider');
@@ -33,6 +36,8 @@ function changeBackground() {
 changeBackground();
 
 setInterval(changeBackground, 5000);
+
+
 });
 
 function startSlider() {

@@ -1,0 +1,56 @@
+{
+  "brenari": {
+    "container": "#brenari_container",
+    "characters": [
+      {
+        "name": "Morrian",
+        "img": "/images/characters/Brenari/Morrian/Morrian_Static.png",
+        "video": "/video/Morrian_Video.mp4",
+        "stats": {
+          "race": "Брэнари",
+          "role": "Воин",
+          "age": 34
+        },
+        "gallery": [
+          "/images/characters/Brenari/Morrian/Morrian_Gallery1.png",
+          "/images/characters/Brenari/Morrian/Morrian_Gallery2.png"
+        ],
+        "story": "ХУЙ"
+      },
+      {
+        "name": "Esphyre",
+        "img": "/images/characters/Brenari/Esphyre/Esphyre_Static.png",
+        "video": "/video/Esphyre_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      }
+    ]
+  },
+  "zungari": {
+    "container": "#zungari_container",
+    "characters": [
+      {
+        "name": "ZenJa",
+        "img": "/images/characters/ZunGari/ZenJa_Static.png",
+        "video": "/video/ZenJa_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      }
+    ]
+  },
+  "runheim": {
+    "container": "#runheim_container",
+    "characters": [
+      {
+        "name": "Borg",
+        "img": "/images/characters/RunHejn/Morrian_Static.png",
+        "video": null,
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      }
+    ]
+  }
+}
