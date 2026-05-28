@@ -24,6 +24,14 @@
         "stats": {},
         "gallery": [],
         "story": ""
+      },
+      {
+        "name": "Элиан Торен",
+        "img": "/images/characters/Brenari/Elian_Toren/Elian_Toren_Static.png",
+        "video": "/video/Elian_Toren_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
       }
     ]
   },
@@ -45,8 +53,24 @@
     "characters": [
       {
         "name": "Borg",
-        "img": "/images/characters/RunHejm/Borg_Static.png",
-        "video": null,
+        "img": "/images/characters/RunHejm/Borg/Borg_Static.png",
+        "video": "/video/Borg_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Elva",
+        "img": "/images/characters/RunHejm/Elva/Elva_Static.png",
+        "video": "/video/Elva_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Rold",
+        "img": "/images/characters/RunHejm/Rold/Rold_Static.png",
+        "video": "/video/Rold_Video.mp4",
         "stats": {},
         "gallery": [],
         "story": ""
