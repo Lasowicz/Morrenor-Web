@@ -3,19 +3,19 @@
     "container": "#brenari_container",
     "characters": [
       {
-        "name": "Morrian",
+        "name": "Морриан Тёмное сердце",
         "img": "/images/characters/Brenari/Morrian/Morrian_Static.png",
         "video": "/video/Morrian_Video.mp4",
         "stats": {
-          "race": "Брэнари",
-          "role": "Воин",
-          "age": 34
+          "Раса": "Брэнари",
+          "Роль": "Морриан — воин-брэнари, выросшая в подземном королевстве Мор Дул. Её сила — в боевой дисциплине, обострённых чувствах и железной воле. Она не владеет магией, не практикует ритуалы: всё, что она умеет, — результат многолетних тренировок и врождённых способностей.",
+          "Возраст": "На момент описываемых событий в Трещины Мира, Морриан было 34 года."
         },
         "gallery": [
           "/images/characters/Brenari/Morrian/Morrian_Gallery1.png",
           "/images/characters/Brenari/Morrian/Morrian_Gallery2.png"
         ],
-        "story": "ХУЙ"
+        "story": "/texts/characters/Morrian_Story.txt"
       },
       {
         "name": "Esphyre",
@@ -45,7 +45,7 @@
     "characters": [
       {
         "name": "Borg",
-        "img": "/images/characters/RunHejn/Morrian_Static.png",
+        "img": "/images/characters/RunHejm/Borg_Static.png",
         "video": null,
         "stats": {},
         "gallery": [],

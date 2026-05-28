@@ -56,13 +56,13 @@ const modal = document.createElement("div");
 modal.classList.add("character-modal");
 
 modal.innerHTML = `
-    <div class="character-modal__content">
-        <button class="character-modal__close">×</button>
-        <h2 class="character-modal__name"></h2>
-        <img class="character-modal__main-img" src="" alt="">
-        <div class="character-modal__stats"></div>
-        <div class="character-modal__gallery"></div>
-        <p class="character-modal__story"></p>
+    <div class="character-modal_content">
+        <button class="character-modal_close">×</button>
+        <h2 class="character-modal_name"></h2>
+        <img class="character-modal_main-img" src="" alt="">
+        <div class="character-modal_stats"></div>
+        <div class="character-modal_gallery"></div>
+        <p class="character-modal_story"></p>
     </div>
 `;
 
@@ -88,11 +88,11 @@ document.addEventListener("click", event => {
 });
 
 function openCharacterModal(character) {
-    const nameElement = modal.querySelector(".character-modal__name");
-    const imageElement = modal.querySelector(".character-modal__main-img");
-    const statsElement = modal.querySelector(".character-modal__stats");
-    const galleryElement = modal.querySelector(".character-modal__gallery");
-    const storyElement = modal.querySelector(".character-modal__story");
+    const nameElement = modal.querySelector(".character-modal_name");
+    const imageElement = modal.querySelector(".character-modal_main-img");
+    const statsElement = modal.querySelector(".character-modal_stats");
+    const galleryElement = modal.querySelector(".character-modal_gallery");
+    const storyElement = modal.querySelector(".character-modal_story");
 
     nameElement.textContent = character.name;
     imageElement.src = character.img;
@@ -122,7 +122,7 @@ function openCharacterModal(character) {
     modal.classList.add("active");
 }
 
-modal.querySelector(".character-modal__close").addEventListener("click", () => {
+modal.querySelector(".character-modal_close").addEventListener("click", () => {
     modal.classList.remove("active");
 });
 
