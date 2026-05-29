@@ -17,37 +17,83 @@ body {
     background-color: rgb(0 0 0);
 }
 
-.header_image {
-    display: flex;
-    background-image: url('../images/characters/header.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 200px;
-    border: #00a7ff 1px solid;
-    box-shadow: 0 0 20px rgba(50, 238, 255, 0.5%);
+.global-navigation {
     align-items: center;
-    justify-content: center;
+    background-color: white;
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    box-sizing: border-box;
 }
 
-.header_text {
-    color: white;
-    text-align: center;
+.logo_link{
     font-family: 'cinzel_regular', sans-serif, serif;
-    font-size: 28px;
+    color: black;
+    margin-left: 10px;
+    padding-top: 4px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-.races_preview_text_container {
-    margin-top: 20px;
+.search_container {
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 1000px;
+}
+
+.sign_in_button {
+    font-family: 'cinzel_bold', sans-serif, serif;
+    font-size: 14px;
+    color: black;
     padding: 10px;
-    font-family: 'cinzel_regular', serif, sans-serif;
-    color: white;
-    font-size: 16px;
-    background: linear-gradient(90deg, #00a7ff, #2c6e94, #b0cad9, #2e8896);
-    text-align: center;
-    border: #00a7ff 1px solid;
-    box-shadow: 0 0 20px rgba(50, 238, 255, 0.99);
+    border-radius: 10px;
+}
+
+.create_account{
+    font-family: 'cinzel_bold', sans-serif, serif;
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.create_account:hover{
+    transition: 1s;
+    transform: scale(105%);
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.sign_in_button:hover{
+    transition: 1s;
+    transform: scale(105%);
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.global_explore_navigation {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: start;
+    position: fixed;
+    background-color: #ffffff;
+    width: 50px;
+    height: 100%;
+    z-index: 500;
+    left: 0;
+    top: 46px;
+}
+
+.main_content {
+    padding-top: 60px;
+    padding-left: 80px;
+    margin: 0 auto;
 }
 
 h3 {
