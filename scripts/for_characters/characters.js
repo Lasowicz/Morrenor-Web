@@ -12,7 +12,10 @@ function renderCharacters() {
         const container = document.querySelector(race.container);
         if (!container) return;
 
-        race.characters.forEach(character => {
+        const sortedCharacters = race.characters.sort((a, b) => a.name.localeCompare(b.name));
+
+        sortedCharacters.forEach(character => {
+
             const card = document.createElement("div");
             card.classList.add("character-card");
             card.dataset.name = character.name;
@@ -73,7 +76,6 @@ function findCharacterByName(name) {
         const character = race.characters.find(character => character.name === name);
         if (character) return character;
     }
-
     return null;
 }
 

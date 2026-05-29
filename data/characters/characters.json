@@ -18,7 +18,7 @@
         "story": "/texts/characters/Morrian_Story.txt"
       },
       {
-        "name": "Esphyre",
+        "name": "Эсфирь Санфайр",
         "img": "/images/characters/Brenari/Esphyre/Esphyre_Static.png",
         "video": "/video/Esphyre_Video.mp4",
         "stats": {},
@@ -39,7 +39,7 @@
     "container": "#zungari_container",
     "characters": [
       {
-        "name": "ZenJa",
+        "name": "Зен'Джа",
         "img": "/images/characters/ZunGari/ZenJa_Static.png",
         "video": "/video/ZenJa_Video.mp4",
         "stats": {},
@@ -52,7 +52,7 @@
     "container": "#runheim_container",
     "characters": [
       {
-        "name": "Borg",
+        "name": "Борг Осторожный",
         "img": "/images/characters/RunHejm/Borg/Borg_Static.png",
         "video": "/video/Borg_Video.mp4",
         "stats": {},
@@ -60,7 +60,7 @@
         "story": ""
       },
       {
-        "name": "Elva",
+        "name": "Эльва",
         "img": "/images/characters/RunHejm/Elva/Elva_Static.png",
         "video": "/video/Elva_Video.mp4",
         "stats": {},
@@ -68,7 +68,7 @@
         "story": ""
       },
       {
-        "name": "Rold",
+        "name": "Рольд Смелый",
         "img": "/images/characters/RunHejm/Rold/Rold_Static.png",
         "video": "/video/Rold_Video.mp4",
         "stats": {},

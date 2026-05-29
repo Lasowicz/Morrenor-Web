@@ -77,7 +77,10 @@ h3 {
     width: 400px;
     height: 450px;
     overflow: hidden;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 30px rgb(255, 0, 0);
 }
+
 
 .character-card img,
 .character-card video {
@@ -101,6 +104,7 @@ h3 {
     place-items: center;
     background: rgba(0, 0, 0, 0.8);
     z-index: 9999;
+
 }
 
 .character-modal.active {
