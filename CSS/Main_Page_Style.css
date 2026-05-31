@@ -20,7 +20,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px 20px;
-    background: url("../images/title_page/background.png") center center / cover no-repeat fixed;
+    background: url("../images/title_page/background.webp") center center / cover no-repeat fixed;
     scroll-behavior: smooth;
 }
 

@@ -32,6 +32,22 @@
         "stats": {},
         "gallery": [],
         "story": ""
+      },
+      {
+        "name": "Леди Велана",
+        "img": "/images/characters/Brenari/Velana/Velana_Static.webp",
+        "video": "/video/Velana_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Лорд Каэлин",
+        "img": "/images/characters/Brenari/Kaelin/Kaelin_Static.webp",
+        "video": "/video/Kaelin_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
       }
     ]
   },

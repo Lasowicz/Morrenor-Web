@@ -14,7 +14,11 @@
 
 
 body {
-    background-color: rgb(0 0 0);
+    background-image: url("../images/title_page/background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .global-navigation {
@@ -33,27 +37,48 @@ body {
 }
 
 .logo_link{
-    font-family: 'cinzel_regular', sans-serif, serif;
+    font-family: 'cinzel_bold', sans-serif, serif;
     color: black;
-    margin-left: 10px;
-    padding-top: 4px;
+    margin-left: 5px;
     font-size: 24px;
     text-decoration: none;
 }
 
+.logo_link:hover{
+    transition: 1s;
+    transform: scale(105%);
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+
 .search_container {
     display: flex;
+    font-family: 'cinzel_bold', sans-serif, serif;
+    color: black;
     justify-content: center;
     background: white;
     width: 1000px;
+    height: auto;
+}
+
+.search_container input {
+    width: 500px;
 }
 
 .sign_in_button {
-    font-family: 'cinzel_bold', sans-serif, serif;
-    font-size: 14px;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
+    font-family: cinzel_regular, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 14px 36px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
 .create_account{
@@ -79,21 +104,71 @@ body {
 .global_explore_navigation {
     display: flex;
     flex-direction: column;
+    padding: 5px;
     font-size: 14px;
-    justify-content: start;
     position: fixed;
     background-color: #ffffff;
-    width: 50px;
+    width: 120px;
     height: 100%;
-    z-index: 500;
     left: 0;
     top: 46px;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    flex-shrink: 0;
 }
 
-.main_content {
-    padding-top: 60px;
-    padding-left: 80px;
+.icons {
+    margin-top: 20px;
+    padding-top: 5px;
+    font-family: 'cinzel_regular', sans-serif, serif;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon_img {
+    display: block;
     margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.icons:hover{
+    transition: 1s;
+    transform: scale(105%);
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.icon_more {
+    margin-top: auto;
+    margin-bottom: 100px;
+    padding-top: 5px;
+    font-family: 'cinzel_regular', sans-serif, serif;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: end;
+}
+
+.icon_more:hover{
+    transition: 1s;
+    transform: scale(105%);
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+.main_content {
+    background-color: #1e1e1e;
+    max-width: 1280px;
+    margin: 80px auto 80px auto;
+    padding: 50px 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
 h3 {
@@ -112,28 +187,35 @@ h3 {
 }
 
 .characters_container {
-    margin: 10px 0;
+    margin: 30px 0 40px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 400px));
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);     /* жёстко 4 колонки */
+    gap: 24px;                                 /* расстояние между карточками */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .character-card {
-    position: relative;
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     overflow: hidden;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 30px rgb(255, 0, 0);
+    border-radius: 8px;
+    background-color: #111;
+    transition: transform 0.2s;
 }
 
+.character-card:hover {
+    transform: scale(1.03);
+}
 
 .character-card img,
 .character-card video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .character-card video {
