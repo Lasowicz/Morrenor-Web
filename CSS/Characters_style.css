@@ -61,7 +61,7 @@ body {
 }
 
 .search_container input {
-    width: 500px;
+    width: 400px;
 }
 
 .sign_in_button {
@@ -86,7 +86,7 @@ body {
     font-size: 14px;
     color: black;
     padding: 10px;
-    border-radius: 10px;
+    text-align: center;
 }
 
 .create_account:hover{
@@ -163,7 +163,7 @@ body {
 .main_content {
     background-color: #1e1e1e;
     max-width: 1280px;
-    margin: 80px auto 80px auto;
+    margin: 80px auto 80px 150px;
     padding: 50px 60px;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -175,7 +175,9 @@ h3 {
     font-family: 'cinzel_regular', sans-serif, serif;
     color: aliceblue;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #333; /* Толщина, стиль и цвет линии */
+    padding-bottom: 5px;
 }
 
 .brenari_text_preview_container {
@@ -189,8 +191,8 @@ h3 {
 .characters_container {
     margin: 30px 0 40px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);     /* жёстко 4 колонки */
-    gap: 24px;                                 /* расстояние между карточками */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -204,6 +206,13 @@ h3 {
     border-radius: 8px;
     background-color: #111;
     transition: transform 0.2s;
+}
+
+.character-card h5 {
+    font-family: 'cinzel_regular', sans-serif, serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
 }
 
 .character-card:hover {
