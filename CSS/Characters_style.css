@@ -191,7 +191,7 @@ h3 {
 .characters_container {
     margin: 30px 0 40px 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     width: 100%;
     max-width: 100%;
@@ -241,7 +241,6 @@ h3 {
     place-items: center;
     background: rgba(0, 0, 0, 0.8);
     z-index: 9999;
-
 }
 
 .character-modal.active {

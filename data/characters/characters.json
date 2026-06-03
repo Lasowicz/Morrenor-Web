@@ -61,6 +61,38 @@
         "stats": {},
         "gallery": [],
         "story": ""
+      },
+      {
+        "name": "Мор'Ла",
+        "img": "/images/characters/ZunGari/ZenJa_Static.png",
+        "video": "/video/ZenJa_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Шалгаш",
+        "img": "/images/characters/ZunGari/Shalgash/Shalgash_Static.webp",
+        "video": null,
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Тумба",
+        "img": "/images/characters/ZunGari/ZenJa_Static.webp",
+        "video": "/video/ZenJa_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
+      },
+      {
+        "name": "Джин'Мба",
+        "img": "/images/characters/ZunGari/DjinMba/DjinMba_Static.png",
+        "video": "/video/DjinMba_Video.mp4",
+        "stats": {},
+        "gallery": [],
+        "story": ""
       }
     ]
   },
@@ -68,7 +100,7 @@
     "container": "#runheim_container",
     "characters": [
       {
-        "name": "Борг Осторожный",
+        "name": "Борг",
         "img": "/images/characters/RunHejm/Borg/Borg_Static.png",
         "video": "/video/Borg_Video.mp4",
         "stats": {},

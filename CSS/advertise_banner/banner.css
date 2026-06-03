@@ -1,0 +1,75 @@
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    min-height: 600px;
+    background: url("/images/advertise_banner/banner_background.webp") center center / cover no-repeat;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 40px rgb(0 18 210 / 0.8);
+    transform: translateY(-50px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.shimmer-element {
+    width: 600px;
+    height: 600px;
+    background-color: #00198f;
+    border-radius: 10px;
+    /* Задаем имя анимации, длительность, тип сглаживания и бесконечный цикл */
+    animation: pulse-shadow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    }
+    50% {
+        /* На пике пульсации тень становится больше, ярче и объемнее */
+        box-shadow: 0 0 30px rgb(0 33 171 / 0.9),
+        0 0 50px rgb(0 51 218);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: rgb(0 0 0 / 0.8);
+}
+
