@@ -1,51 +1,103 @@
 const banner = document.createElement("div");
 banner.classList.add("banner");
+
 const modalBox = document.createElement("div");
-modalBox.classList.add("modal");
-modalBox.classList.add("shimmer-element");
+modalBox.classList.add("modal", "shimmer-element");
+
 const closeBtn = document.createElement("button");
 closeBtn.classList.add("close");
+closeBtn.type = "button";
+closeBtn.setAttribute("aria-label", "Закрыть окно");
+
+const brand = document.createElement("div");
+brand.classList.add("brand");
+brand.innerHTML = `
+    <div class="brand-title">МОРРЕНОР</div>
+    <div class="brand-subtitle">— ТРЕЩИНЫ МИРА —</div>
+`;
+
 const title = document.createElement("h4");
 title.classList.add("title");
+
 const text = document.createElement("p");
 text.classList.add("text");
-const subscribeBtn = document.createElement("button");
+
+const features = document.createElement("div");
+features.classList.add("features");
+
+const featureData = [
+    {
+        icon: "/images/advertise_banner/icon_news.png",
+        text: "Свежие новости<br>о мире Морренора"
+    },
+    {
+        icon: "/images/advertise_banner/icon_chapters.png",
+        text: "Новые главы<br>и истории"
+    },
+    {
+        icon: "/images/advertise_banner/icon_exclusive.png",
+        text: "Эксклюзивный<br>контент и события"
+    }
+];
+
+featureData.forEach((item) => {
+    const feature = document.createElement("button");
+    feature.classList.add("feature");
+    feature.type = "button";
+
+    feature.innerHTML = `
+        <span class="featureIcon">
+            <img src="${item.icon}" alt="">
+        </span>
+        <span class="featureText">${item.text}</span>
+    `;
+
+    features.appendChild(feature);
+});
+
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttonContainer");
+
+const subscribeBtn = document.createElement("button");
 subscribeBtn.classList.add("subscribe_btn");
+subscribeBtn.type = "button";
+
 const anotherBtn = document.createElement("button");
-subscribeBtn.classList.add("another_btn");
+anotherBtn.classList.add("another_btn");
+anotherBtn.type = "button";
 
 buttonContainer.append(subscribeBtn, anotherBtn);
-modalBox.append(closeBtn, title, text, buttonContainer);
+modalBox.append(closeBtn, brand, title, text, features, buttonContainer);
 banner.appendChild(modalBox);
 document.body.appendChild(banner);
 
-title.textContent = 'Успей подписаться на самые последние обновления мира Морренор!';
-closeBtn.textContent = 'x';
+title.innerHTML = 'Успей подписаться<br>на последние обновления<br><span>Морренора!</span>';
+text.textContent = 'Новости, главы, заметки о мире, события и материалы по Морренору в одном месте.';
+closeBtn.textContent = '×';
 subscribeBtn.textContent = 'Подписаться';
-text.textContent = 'Охуительная история про говно, про малафью, про то как поебался '
-anotherBtn.textContent ='В другой раз'
+anotherBtn.textContent = 'В другой раз';
 
 function openModal() {
-    banner.style.visibility = "visible";
-    banner.style.opacity = "1";
-    modalBox.style.transform = "translateY(0)";
+    banner.classList.add("banner_open");
+    modalBox.classList.add("modal_open");
 }
 
 function closeModal() {
-    banner.style.opacity = "0";
-    modalBox.style.transform = "translateY(-50px)";
-    setTimeout(() => {
-        banner.style.visibility = "hidden";
-    }, 300);
+    modalBox.classList.remove("modal_open");
+    banner.classList.remove("banner_open");
 }
 
 closeBtn.addEventListener("click", closeModal);
-banner.addEventListener("click", (e) =>{
-    if(e.target === banner) closeModal();
+
+banner.addEventListener("click", (e) => {
+    if (e.target === banner) closeModal();
 });
 
 anotherBtn.addEventListener("click", closeModal);
 
-openModal();
+subscribeBtn.addEventListener("click", () => {
+    // Здесь можно повесить переход, отправку формы или открытие блока подписки.
+    console.log("Подписка на Морренор");
+});
+
+setTimeout(openModal, 5000);
