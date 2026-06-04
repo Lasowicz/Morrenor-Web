@@ -2,16 +2,16 @@
                                                   /*FONTS ON MAIN_PAGE*/
 @font-face {
     font-family: 'SimpleGothic';
-    src: url('../fonts/SimpleGothic.woff') format('woff');
+    src: url('../../fonts/SimpleGothic.woff') format('woff');
 }
 @font-face {
     font-family: 'cinzel_regular';
-    src: url('../fonts/cinzel_regular.woff') format('woff');
+    src: url('../../fonts/cinzel_regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'cinzel_bold';
-    src: url('../fonts/cinzel_bold.woff') format('woff');
+    src: url('../../fonts/cinzel_bold.woff') format('woff');
 }
 
 
@@ -20,7 +20,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px 20px;
-    background: url("../images/title_page/background.webp") center center / cover no-repeat fixed;
+    background: url("../../images/title_page/background.webp") center center / cover no-repeat fixed;
     scroll-behavior: smooth;
 }
 

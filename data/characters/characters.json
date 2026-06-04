@@ -4,7 +4,7 @@
     "characters": [
       {
         "name": "Морриан Тёмное сердце",
-        "img": "/images/characters/Brenari/Morrian/Morrian_Static.png",
+        "img": "/images/characters/Brenari/Morrian/Morrian_Static.webp",
         "video": "/video/Morrian_Video.mp4",
         "stats": {
           "Раса": "Брэнари",
@@ -19,7 +19,7 @@
       },
       {
         "name": "Эсфирь Санфайр",
-        "img": "/images/characters/Brenari/Esphyre/Esphyre_Static.png",
+        "img": "/images/characters/Brenari/Esphyre/Esphyre_Static.webp",
         "video": "/video/Esphyre_Video.mp4",
         "stats": {},
         "gallery": [],
@@ -27,7 +27,7 @@
       },
       {
         "name": "Элиан Торен",
-        "img": "/images/characters/Brenari/Elian_Toren/Elian_Toren_Static.png",
+        "img": "/images/characters/Brenari/Elian_Toren/Elian_Toren_Static.webp",
         "video": "/video/Elian_Toren_Video.mp4",
         "stats": {},
         "gallery": [],
@@ -101,7 +101,7 @@
     "characters": [
       {
         "name": "Борг",
-        "img": "/images/characters/RunHejm/Borg/Borg_Static.png",
+        "img": "/images/characters/RunHejm/Borg/Borg_Static.webp",
         "video": "/video/Borg_Video.mp4",
         "stats": {},
         "gallery": [],
@@ -109,7 +109,7 @@
       },
       {
         "name": "Эльва",
-        "img": "/images/characters/RunHejm/Elva/Elva_Static.png",
+        "img": "/images/characters/RunHejm/Elva/Elva_Static.webp",
         "video": "/video/Elva_Video.mp4",
         "stats": {},
         "gallery": [],
@@ -117,7 +117,7 @@
       },
       {
         "name": "Рольд Смелый",
-        "img": "/images/characters/RunHejm/Rold/Rold_Static.png",
+        "img": "/images/characters/RunHejm/Rold/Rold_Static.webp",
         "video": "/video/Rold_Video.mp4",
         "stats": {},
         "gallery": [],

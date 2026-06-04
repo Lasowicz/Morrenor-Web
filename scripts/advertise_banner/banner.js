@@ -9,14 +9,23 @@ const title = document.createElement("h4");
 title.classList.add("title");
 const text = document.createElement("p");
 text.classList.add("text");
+const subscribeBtn = document.createElement("button");
+const buttonContainer = document.createElement("div");
+buttonContainer.classList.add("buttonContainer");
+subscribeBtn.classList.add("subscribe_btn");
+const anotherBtn = document.createElement("button");
+subscribeBtn.classList.add("another_btn");
 
-title.textContent = 'Здесь нужно разместить рекламную информацию типа ПОДПИШИСЬ, СТАВЬ ЛОЙС';
-
-closeBtn.textContent = 'x';
-
-modalBox.append(closeBtn, title, text);
+buttonContainer.append(subscribeBtn, anotherBtn);
+modalBox.append(closeBtn, title, text, buttonContainer);
 banner.appendChild(modalBox);
 document.body.appendChild(banner);
+
+title.textContent = 'Успей подписаться на самые последние обновления мира Морренор!';
+closeBtn.textContent = 'x';
+subscribeBtn.textContent = 'Подписаться';
+text.textContent = 'Охуительная история про говно, про малафью, про то как поебался '
+anotherBtn.textContent ='В другой раз'
 
 function openModal() {
     banner.style.visibility = "visible";
@@ -37,6 +46,6 @@ banner.addEventListener("click", (e) =>{
     if(e.target === banner) closeModal();
 });
 
-openModal();
+anotherBtn.addEventListener("click", closeModal);
 
-//setTimeout(openModal, 5000);
+openModal();

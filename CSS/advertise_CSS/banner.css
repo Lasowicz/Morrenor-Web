@@ -17,27 +17,31 @@
 .modal {
     position: relative;
     width: 90%;
-    max-width: 600px;
-    min-height: 600px;
+    height: auto;
     background: url("/images/advertise_banner/banner_background.webp") center center / cover no-repeat;
     border-radius: 15px;
+    border: 1px solid white;
     padding: 30px;
     box-shadow: 0 0 40px rgb(0 18 210 / 0.8);
     transform: translateY(-50px);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 2s ease, opacity 2s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-
+@media (max-width: 1400px) {
+    .modal .shimmer-element {
+        max-width: 250px;
+        min-height: 250px;
+    }
+}
 .shimmer-element {
     width: 600px;
-    height: 600px;
+    height: 400px;
     background-color: #00198f;
     border-radius: 10px;
-    /* Задаем имя анимации, длительность, тип сглаживания и бесконечный цикл */
-    animation: pulse-shadow 2s infinite ease-in-out;
+    animation: pulse-shadow 3s infinite ease-in-out;
 }
 
 @keyframes pulse-shadow {
@@ -65,7 +69,13 @@
     cursor: pointer;
 }
 
+.close:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
 .title {
+    font-family: cinzel_regular, sans-serif, serif;
     text-align: center;
     color: #fff;
     font-size: 24px;
@@ -73,3 +83,32 @@
     background: rgb(0 0 0 / 0.8);
 }
 
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonContainer button {
+    display: flex;
+    font-family: cinzel_regular, sans-serif, serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(135deg, #2a0a1f, #1a0f2e, #0f1b3d);
+    z-index: 1000;
+    box-shadow: 0 0 40px rgb(0 18 210 / 0.8);
+    border-radius: 4px;
+    border: 1px solid #0048ff;;
+    box-sizing: border-box;
+}
+
+.buttonContainer button:hover {
+    transform: scale(102%);
+    transition: 1s;
+}
