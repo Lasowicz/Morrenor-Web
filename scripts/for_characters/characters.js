@@ -22,7 +22,7 @@ function renderCharacters() {
 
             card.innerHTML = `
                 <img src="${character.img}" alt="${character.name}">
-                <h5 class="title_character_name">${character.name}</h5>     
+                <button class="title_character_name">${character.name}</button>     
                 ${character.video ? `
                     <video src="${character.video}" muted loop playsinline preload="metadata"></video>
                 ` : ""}

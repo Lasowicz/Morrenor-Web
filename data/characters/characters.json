@@ -64,8 +64,8 @@
       },
       {
         "name": "Мор'Ла",
-        "img": "/images/characters/ZunGari/ZenJa_Static.png",
-        "video": "/video/ZenJa_Video.mp4",
+        "img": "/images/characters/ZunGari/MorLa/MorLa_Static.webp",
+        "video": "/video/MorLa_Video.mp4",
         "stats": {},
         "gallery": [],
         "story": ""
@@ -80,8 +80,8 @@
       },
       {
         "name": "Тумба",
-        "img": "/images/characters/ZunGari/ZenJa_Static.webp",
-        "video": "/video/ZenJa_Video.mp4",
+        "img": "/images/characters/ZunGari/TumBa/TumBa_Static.webp",
+        "video": "/video/TumBa_Video.mp4",
         "stats": {},
         "gallery": [],
         "story": ""
