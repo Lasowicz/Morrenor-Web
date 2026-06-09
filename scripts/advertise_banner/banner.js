@@ -100,4 +100,4 @@ subscribeBtn.addEventListener("click", () => {
     console.log("Подписка на Морренор");
 });
 
-//setTimeout(openModal, 5000);
+setTimeout(openModal, 5000);
